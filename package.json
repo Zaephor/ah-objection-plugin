@@ -28,5 +28,8 @@
   "dependencies": {
     "glob": "^7.1.4",
     "objection": "^1.6.9"
+  },
+  "devDependencies": {
+    "actionhero": ">=19.1.4"
   }
 }
