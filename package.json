@@ -1,6 +1,6 @@
 {
   "name": "@zaephor-ah/ah-objection-plugin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Zaephor <Zaephor@users.noreply.github.com>",
   "homepage": "https://github.com/Zaephor/ah-plugins#readme",
@@ -26,15 +26,15 @@
     "node": ">=10.0.0"
   },
   "peerDependencies": {
-    "actionhero": ">=19.1.4",
-    "@zaephor-ah/ah-knex-plugin": "0.0.0"
+    "@zaephor-ah/ah-knex-plugin": "0.0.0",
+    "actionhero": ">=19.1.4"
   },
   "dependencies": {
     "glob": "^7.1.4",
     "objection": "^1.6.9"
   },
   "devDependencies": {
-    "actionhero": ">=19.1.4",
-    "@zaephor-ah/ah-knex-plugin": "0.0.0"
+    "@zaephor-ah/ah-knex-plugin": "^0.1.0",
+    "actionhero": ">=19.1.4"
   }
 }
