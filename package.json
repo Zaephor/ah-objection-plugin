@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/Zaephor/ah-plugins/issues"
   },
+  "directories": {
+    "initializers": "initializers"
+  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
@@ -23,13 +26,14 @@
   },
   "peerDependencies": {
     "actionhero": ">=19.1.4",
-    "ah-knex-plugin": "git+https://github.com/Zaephor/ah-knex-plugin.git"
+    "@zaephor-ah/ah-knex-plugin": "0.0.0"
   },
   "dependencies": {
     "glob": "^7.1.4",
     "objection": "^1.6.9"
   },
   "devDependencies": {
-    "actionhero": ">=19.1.4"
+    "actionhero": ">=19.1.4",
+    "@zaephor-ah/ah-knex-plugin": "0.0.0"
   }
 }
