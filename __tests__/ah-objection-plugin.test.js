@@ -35,6 +35,6 @@ describe('ah-objection-plugin', () => {
     })
   })
 
-  it('should validate that migrations can be detected')
-  it('should validate that migrations can be run')
+  it('should validate that models can be detected')
+  it('should validate that models can be loaded')
 })
