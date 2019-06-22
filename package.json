@@ -16,9 +16,10 @@
   "bugs": {
     "url": "https://github.com/Zaephor/ah-plugins/issues"
   },
-  "directories": {
-    "initializers": "initializers"
-  },
+  "files": [
+    ".index.js",
+    "initializers"
+  ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
