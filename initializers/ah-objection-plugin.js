@@ -26,7 +26,6 @@ module.exports = class ObjectionInitializer extends Initializer {
     api.objection.loadFile = async (fileType, file) => {
       // console.log({ fileType, file })
       if (fileType === 'models') {
-        // const tmpModel = api.sequelize['import'](path.resolve(file))
         let tmpModel = require(path.resolve(file))(api.objection.Model)
         if (api[fileType][tmpModel.tableName]) { throw new Error('[' + this.name + '] The model "' + tmpModel.tableName + '" in ' + file + ' was already defined.') }
         api[fileType][tmpModel.tableName] = tmpModel
