@@ -26,17 +26,17 @@ module.exports = class ObjectionInitializer extends Initializer {
     api.objection.loadFile = async (fileType, file) => {
       // console.log({ fileType, file })
       if (fileType === 'models') {
-        let tmpModel = require(path.resolve(file))(api.objection.Model)
+        const tmpModel = require(path.resolve(file))(api.objection.Model)
         if (api[fileType][tmpModel.tableName]) { throw new Error('[' + this.name + '] The model "' + tmpModel.tableName + '" in ' + file + ' was already defined.') }
         api[fileType][tmpModel.tableName] = tmpModel
       }
     }
 
-    for (let pluginName in api.config.plugins) {
+    for (const pluginName in api.config.plugins) {
       if (api.config.plugins[pluginName].models !== false) {
-        let pluginPath = api.config.plugins[pluginName].path
-        let files = glob.sync(path.join(pluginPath, 'models', '**', '*.js'))
-        for (let j in files) { await api.objection.loadFile('models', files[j]) }
+        const pluginPath = api.config.plugins[pluginName].path
+        const files = glob.sync(path.join(pluginPath, 'models', '**', '*.js'))
+        for (const j in files) { await api.objection.loadFile('models', files[j]) }
       }
     }
   }
