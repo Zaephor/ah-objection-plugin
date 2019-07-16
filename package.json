@@ -27,7 +27,7 @@
     "node": ">=10.0.0"
   },
   "peerDependencies": {
-    "@zaephor-ah/ah-knex-plugin": "^0.1.1",
+    "@zaephor-ah/ah-knex-plugin": "^0.1.2",
     "actionhero": ">=19.1.4"
   },
   "dependencies": {
