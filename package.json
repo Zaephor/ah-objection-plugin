@@ -32,7 +32,7 @@
   },
   "peerDependencies": {
     "@zaephor-ah/ah-knex-plugin": "^0.1.2",
-    "actionhero": ">=19.1.4"
+    "actionhero": ">=19.2.1"
   },
   "dependencies": {
     "glob": "^7.1.4",
@@ -43,7 +43,7 @@
     "@commitlint/config-conventional": "^8.1.0",
     "@commitlint/prompt-cli": "^8.1.0",
     "@zaephor-ah/ah-knex-plugin": "^0.1.2",
-    "actionhero": ">=19.1.4",
+    "actionhero": ">=19.2.1",
     "chai": "latest",
     "husky": "latest",
     "lint-staged": "latest",
