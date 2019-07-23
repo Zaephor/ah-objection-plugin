@@ -21,7 +21,10 @@
     "initializers"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "commit": "commit",
+    "update-dep": "npx -p npm-check-updates ncu -u && npm install",
+    "pretest": "standard",
+    "test": "NODE_ENV=test mocha --colors --reporter spec --exit __tests__/*.js"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -35,7 +38,30 @@
     "objection": "^1.6.9"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@commitlint/prompt-cli": "^8.1.0",
     "@zaephor-ah/ah-knex-plugin": "^0.1.2",
-    "actionhero": ">=19.1.4"
+    "actionhero": ">=19.1.4",
+    "chai": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "mocha": "latest",
+    "standard": "latest"
+  },
+  "standard": {
+    "ignore": [
+      "**/__tests__/**",
+      "**/ActionheroWebsocketClient.*"
+    ],
+    "globals": [
+      "describe",
+      "test",
+      "beforeAll",
+      "beforeEach",
+      "afterAll",
+      "afterEach",
+      "expect"
+    ]
   }
 }
