@@ -47,6 +47,7 @@
     "husky": "latest",
     "lint-staged": "latest",
     "mocha": "latest",
+    "sqlite3": "^4.0.9",
     "standard": "latest"
   },
   "standard": {
