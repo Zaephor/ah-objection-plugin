@@ -30,11 +30,12 @@ describe('ah-objection-plugin', () => {
     expect(api.running).to.equal(true)
   })
 
-  Array('knex', 'objection', 'models').forEach(function (attribute) {
+  const scopes = ['knex', 'objection', 'models']
+  for (const attribute of scopes) {
     it(attribute + ' should be in api scope', async () => {
       expect(api[attribute]).to.exist
     })
-  })
+  }
 
   it('should validate that models can be detected')
   it('should validate that models can be loaded')
